@@ -1,3 +1,3 @@
-# goit-markup-hw-03
+# goit home work
 
-Home work module 3
+barbershop sample
