@@ -16,28 +16,30 @@
 
 <body>
   <!-- Navigation section -->
-  <header>
-    <a href=".\index.html" class="logo">logo</a>
-    <nav>
-      <ul class="list menu-list">
-        <li class="menu-item"><a href="#" class="link menu-link">About</a>
-        </li>
-        <li class="menu-item"><a href="#" class="link menu-link">Services and prices</a>
-        </li>
-        <li class="menu-item"><a href="#" class="link menu-link">Barbers</a>
-        </li>
-        <li class="menu-item"><a href="#" class="link menu-link">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <a href="tel:+380441111111" class="link link-tel">+38 044 111 11 11</a>
-    <button type="">online-booking</button>
+  <header class="page-header">
+    <div class="container">
+      <a href=".\index.html" class="link logo">logo</a>
+      <nav>
+        <ul class="list menu-list">
+          <li class="menu-item"><a href="#" class="link menu-link">About</a>
+          </li>
+          <li class="menu-item"><a href="#" class="link menu-link">Services and prices</a>
+          </li>
+          <li class="menu-item"><a href="#" class="link menu-link">Barbers</a>
+          </li>
+          <li class="menu-item"><a href="#" class="link menu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:+380441111111" class="link link-tel">+38 044 111 11 11</a>
+      <button type="button" class="btn order-button">online-booking</button>
+    </div>
   </header>
 
   <main>
 
     <!-- Hero section -->
-    <section class="hero-section">
+    <section class="section hero-section">
       <div class="container">
         <p class="sub-title">A hair salon for men in Kyiv</p>
         <h1 class="hero-title">BarberShop</h1>
@@ -45,15 +47,21 @@
           We are experts in trendy men&#x2019s haircuts. We work quickly,
           carefully and with style.
         </p>
-        <ul class="list side-menu-list">
-          <li class="menu-item"><a href="#" class="menu-link">Instagram</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">Youtube</a></li>
-        </ul>
+        <address>
+          <ul class="list social-list">
+            <li class="list-item">
+              <a href="#" class="link socials-link">Instagram</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link socials-link">Youtube</a>
+            </li>
+          </ul>
+        </address>
       </div>
     </section>
 
     <!-- About section -->
-    <section class="about-section">
+    <section class="section about-section">
       <div class="container">
         <p class="sub-title">about</p>
         <h2 class="section-title">Best Barbershop in your city</h2>
@@ -64,19 +72,19 @@
           changes. And when you fall into the hands of our master, you will never be the same again. We are a team that
           is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!
         </p>
-        <a href="#" class="order-button"> online-booking </a>
+        <button type="button" class="btn order-button">online-booking</button>
       </div>
-      <img src="./images/about-1.jpg" alt="Стрижка бороды" width="270px" class="about-image1">
-      <img src="./images/about-2.jpg" alt="Стрижка головы" width="270px" class="about-image2">
+      <img src="./images/about-1.jpg" alt="Стрижка бороды" width="270px" class="img about-image1">
+      <img src="./images/about-2.jpg" alt="Стрижка головы" width="270px" class="img about-image2">
     </section>
 
     <!-- Price-list section -->
-    <section class="price-list-section">
+    <section class="section price-list-section">
       <div class="container">
         <p class="sub-title">Spend your time with the best masters</p>
         <h2 class="section-title">Services and prices</h2>
         <p class="section-text">Spend your time with the best masters</p>
-        <ul class="price-list first">
+        <ul class="list price-list-first">
           <li class="list-item">
             <p class="item-name">Men&#x2019s haircut</p>
             <p class="item-price">from 300 uah.</p>
@@ -94,7 +102,7 @@
             <p class="item-price">from 200 uah.</p>
           </li>
         </ul>
-        <ul class="price-list second">
+        <ul class="list price-list-second">
           <li class="list-item">
             <p class="item-name">Trainee&#x2019s haircut</p>
             <p class="item-price">from 50 uah.</p>
@@ -113,17 +121,17 @@
           </li>
         </ul>
       </div>
-      <a href="#" class="order-button"> online-booking </a>
+      <button type="button" class="btn order-button">online-booking</button>
     </section>
 
     <!-- Benefits section -->
-    <section class="benefits-section">
+    <section class="section benefits-section">
       <div class="container">
         <p class="sub-title">Old traditional school</p>
         <h2 class="section-title">&U+00BFWhy people come to us?</h2>
         <p class="section-text">Only good things are said about us. But it's better to see and feel 1 time than read 10
           times.</p>
-        <ul class="benefits-list">
+        <ul class="list benefits-list">
           <li class="list-item">
             <h3 class="benefits-title">600</h3>
             <p class="benefits-explanation">Satisfied customers per day</p>
@@ -145,42 +153,42 @@
     </section>
 
     <!-- Team section -->
-    <section class="team-section">
+    <section class="section team-section">
       <div class="container">
         <p class="sub-title">For true enjoyers of the atmosphere</p>
         <h2 class="section-title">Our barbers</h2>
-        <ul class="team-list">
+        <ul class="list team-list">
           <li class="card-item">
-            <img src="./images/john-smith.jpg" alt="Foto John Smith" width="370px" class="foto">
+            <img src="./images/john-smith.jpg" alt="Foto John Smith" width="370px" class="img team-foto">
             <h3 class="name-barber">John Smith</h3>
             <p class="proffession">Extreme Barber</p>
-            <ul class="socials-list">
-              <li class="list-item"><a href="#" class="item-link">instagram</a></li>
-              <li class="list-item"><a href="#" class="item-link">twitter</a></li>
-              <li class="list-item"><a href="#" class="item-link">facebook</a></li>
-              <li class="list-item"><a href="#" class="item-link">likedin</a></li>
+            <ul class="list socials-list">
+              <li class="list-item"><a href="#" class="link social-link">instagram</a></li>
+              <li class="list-item"><a href="#" class="link social-link">twitter</a></li>
+              <li class="list-item"><a href="#" class="link social-link">facebook</a></li>
+              <li class="list-item"><a href="#" class="link social-link">likedin</a></li>
             </ul>
           </li>
           <li class="card-item">
-            <img src="./images/michele-doe.jpg" alt="Foto Michele Doe" width="370px" class="foto">
+            <img src="./images/michele-doe.jpg" alt="Foto Michele Doe" width="370px" class="img team-foto">
             <h3 class="name-barber">Michele Doe</h3>
             <p class="proffession">Extreme Barber</p>
-            <ul class="socials-list">
-              <li class="list-item"><a href="#" class="item-link">instagram</a></li>
-              <li class="list-item"><a href="#" class="item-link">twitter</a></li>
-              <li class="list-item"><a href="#" class="item-link">facebook</a></li>
-              <li class="list-item"><a href="#" class="item-link">likedin</a></li>
+            <ul class="list socials-list">
+              <li class="list-item"><a href="#" class="link social-link">instagram</a></li>
+              <li class="list-item"><a href="#" class="link social-link">twitter</a></li>
+              <li class="list-item"><a href="#" class="link social-link">facebook</a></li>
+              <li class="list-item"><a href="#" class="link social-link">likedin</a></li>
             </ul>
           </li>
           <li class="card-item">
             <img src="./images/alan-black.jpg" alt="Foto Alan Black" width="370px" class="foto">
             <h3 class="name-barber">Alan Black</h3>
             <p class="proffession"></p>
-            <ul class="socials-list">
-              <li class="list-item"><a href="#" class="item-link">instagram</a></li>
-              <li class="list-item"><a href="#" class="item-link">twitter</a></li>
-              <li class="list-item"><a href="#" class="item-link">facebook</a></li>
-              <li class="list-item"><a href="#" class="item-link">likedin</a></li>
+            <ul class="list socials-list">
+              <li class="list-item"><a href="#" class="link social-link">instagram</a></li>
+              <li class="list-item"><a href="#" class="link social-link">twitter</a></li>
+              <li class="list-item"><a href="#" class="link social-link">facebook</a></li>
+              <li class="list-item"><a href="#" class="link social-link">likedin</a></li>
             </ul>
           </li>
         </ul>
@@ -188,25 +196,68 @@
     </section>
 
     <!-- Portfolio section -->
-    <section class="benefits-section">
+    <section class="section benefits-section">
       <div class="container">
         <p class="sub-title">In Latin, "barba" means "beard"</p>
         <h2 class="section-title">Portfolio</h2>
-        <ul class="portfolio-list">
-          <li class="list-item"><a href="#" class="item-link"><img src="./images/portfolio-1.jpg"
-                alt="Portfolio photo 1" width="270px" class="protfolio-image"></a></li>
-          <li class="list-item"><a href="#" class="item-link"><img src="./images/portfolio-2.jpg"
-                alt="Portfolio photo 2" width="270px" class="protfolio-image"></a></li>
-          <li class="list-item"><a href="#" class="item-link"><img src="./images/portfolio-3.jpg"
-                alt="Portfolio photo 3" width="270px" class="protfolio-image"></a></li>
-          <li class="list-item"><a href="#" class="item-link"><img src="./images/portfolio-4.jpg"
-                alt="Portfolio photo 4" width="270px" class="protfolio-image"></a></li>
+        <ul class="list portfolio-list">
+          <li class="list-item"><a href="#" class="link item-link"><img src="./images/portfolio-1.jpg"
+                alt="Portfolio photo 1" width="270px" class="img protfolio-image"></a></li>
+          <li class="list-item"><a href="#" class="link item-link"><img src="./images/portfolio-2.jpg"
+                alt="Portfolio photo 2" width="270px" class="img protfolio-image"></a></li>
+          <li class="list-item"><a href="#" class="link item-link"><img src="./images/portfolio-3.jpg"
+                alt="Portfolio photo 3" width="270px" class="img protfolio-image"></a></li>
+          <li class="list-item"><a href="#" class="link item-link"><img src="./images/portfolio-4.jpg"
+                alt="Portfolio photo 4" width="270px" class="img protfolio-image"></a></li>
         </ul>
     </section>
   </main>
 
-  <footer>
+  <section class="section benefits-section">
+    <div class="container">
+      <h2 class="section-title">Online-booking</h2>
+      <form action="">
 
+      </form>
+  </section>
+  </main>
+
+  <section class="section benefits-section">
+    <div class="container">
+      <h2 class="section-title">Contacts</h2>
+      <address class="footer-address">
+        <ul class="list address-list">
+          <li class="list-item">
+            <a href="#" target="_blank" rel="noreferer noopener nofollow" class="link googlemap-address">st.
+              Vasilkivska, 7A Kyiv, 08132</a>
+          </li>
+          <li class="list-item">
+            <a href="tel:+380441111111" class="link tel-link">+38 044 111 11 11</a>
+          </li>
+          <li class="list-item">
+            <a href="mailto:barbershop@email.com" class="link mail-link">barbershop@email.com</a>
+          </li>
+        </ul>
+        <p class="sub-title">Working hours</p>
+        <p class="text">Every day from 9:00 to 22:00</p>
+      </address>
+  </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p class="text copyright">&#169; Copyright 2020</p>
+      <address>
+        <ul class="list social-list">
+          <li class="list-item">
+            <a href="#" class="link social-link">Instagram</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link social-link">Youtube</a>
+          </li>
+        </ul>
+      </address>
+    </div>
   </footer>
 </body>
 
