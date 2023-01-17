@@ -1,43 +1,94 @@
-/* vp - 1170+p*2, 690+40p*2, 418+30p*2 */
+@import "./local-norm.css";
 
-:root {
-    --primary-brand: #4D5AE5;
-    --order-active: #404BBF;
-    --Dark: #2E2F42;
-    --Modal: #FCFCFC;
-    --Success: #31D0AA;
-    --_text: #434455;
-    --text-modal: #757575;
-    --Subtle-Text: #8E8F99;
-    --Accent: #E7E9FC;
-    --Light: #F4F4FD;
-    --bgc-white: #fff;
-    --icon: #000;
-    --modal-decor: rgba(33, 33, 33, 0.2);
-    --placeholder: rgba(255, 255, 255, 0.6);
-    --cubic: 0.4, 0, 0.2, 1;
-    --gap-h: 24px;
-    --gap-v: 72px;
-    --gap-text: 8px;
+body {
+    color: var(--_text);
+    background-color: var(--bgc-white);
+    font-family: 'open-sans';
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
-@media screen and (min-width: 428px) {}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+    .container {
+        width: 420px;
+    }
+}
 
-@media screen and (max-width: 767px) {}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 688px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
-@media screen and (min-width: 1158px) {}
+.link {
+}
+.logo {
+}
+.list {
+}
+.menu-list {
+}
+.menu-item {
+}
+.menu-link {
+}
+.link-tel {
+}
+.btn {
+}
+.order-button {
+}
+.burger-menu {
+}
+.mobile-menu {
+}
+.modal-container {
+}
+.close-menu {
+}
+.icon {
+}
+.modal-menu {
+}
+.modal-addr {
+}
+.addr-item {
+}
+.modal-contacts {
+}
+.list-item {
+}
+.socials-link {
+}
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 40px;
+    }
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page-header .menu-list,
+    .page-header .menu-address {
+        display: none;
+    }
 }

@@ -1,0 +1,96 @@
+/* vp - 1170+p*2, 690+40p*2, 418+30p*2 */
+
+/* padding - 30px */
+@media screen and (min-width: 480px) {}
+
+@media screen and (max-width: 767px) {}
+
+/* padding - 40px */
+@media screen and (min-width: 768px) {}
+
+/* padding - 15px */
+@media screen and (min-width: 1200px) {}
+
+:root {
+    --text: #555555;
+    --dark-text: #303030;
+    --order-active: #FF6C00;
+    --Modal: #FCFCFC;
+    --Success: #31D0AA;
+    --text-modal: #757575;
+    --Subtle-Text: #8E8F99;
+    --Accent: #E7E9FC;
+    --Light: #F4F4FD;
+    --white: #fff;
+    --icon: ;
+    --modal-decor: ;
+    --placeholder: ;
+    --cubic: 0.4, 0, 0.2, 1;
+    --gap-h: 24px;
+    --gap-v: 72px;
+    --gap-text: 8px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.list,
+.link,
+.logo {
+    margin: 0;
+}
+
+.list,
+.btn {
+    padding: 0;
+    list-style: none;
+    border: none;
+    line-height: 0;
+}
+
+.logo,
+.logo:link,
+.logo:visited,
+.logo:hover,
+.link,
+.link:link,
+.link:visited,
+.link:hover {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.icon {
+    fill: currentColor;
+}
