@@ -1,8 +1,8 @@
 @import "./local-norm.css";
 
 body {
-    color: var(--_text);
-    background-color: var(--bgc-white);
+    color: var(--text);
+    background-color: var(--white);
     font-family: 'open-sans';
     font-size: 18px;
     line-height: 1.67;
