@@ -17,13 +17,13 @@ body {
 }
 @media screen and (min-width: 480px) {
     .container {
-        width: 420px;
+        width: 480px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 688px;
+        max-width: 768px;
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -31,7 +31,7 @@ body {
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+        max-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -40,6 +40,8 @@ body {
 .link {
 }
 .logo {
+    width: 69px;
+    height: 56px;
 }
 .list {
 }
@@ -56,12 +58,9 @@ body {
 .order-button {
 }
 .burger-menu {
-}
-.mobile-menu {
-}
-.modal-container {
-}
-.close-menu {
+    width: 40px;
+    height: 40px;
+    color: var(--dark-text);
 }
 .icon {
 }
@@ -91,4 +90,53 @@ body {
     .page-header .menu-address {
         display: none;
     }
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -337px;
+        width: 100%;
+        max-width: 337px;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 48px 30px;
+        background: #FFFFFF;
+        box-shadow: 
+            -4px 0px 8px rgba(0, 0, 0, 0.04), 
+            -2px 0px 4px rgba(0, 0, 0, 0.08), 
+            -1px 0px 3px rgba(0, 0, 0, 0.16),
+            0 0 100vw 100vw rgba(25, 28, 38, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(0);
+        transition:
+            transform 250ms cubic-bezier(var(--cubic)),
+            visibility 0s 250ms;
+    }
+    .mobile-menu.is-open {
+        transform: translateX(-337px);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition:
+                /* opacity 0 250ms, */
+                visibility 0;
+    }
+    .modal-container {
+    }
+    .close-menu {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+
+        cursor: pointer;
+        color: var(--dark-text);
+        border: transparent;
+    }
+    
 }
